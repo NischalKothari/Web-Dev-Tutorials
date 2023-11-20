@@ -1,6 +1,6 @@
 # Web-Dev-Tutorials-
-All of my Web dev learnings at one place !!
+All of my Web dev learnings at one place !
 <br>Learning Sequence:- 
 <li>HTML</li>
 <li>CSS</li>
-<li>JavaScript</li>
+<li>Javascript</li>

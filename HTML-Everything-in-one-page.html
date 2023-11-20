@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!--Document ka type html hai-->
+<html lang="en"> <!--HTML ki language-->
+<!--Head me external stylesheets link ki jayegi-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD</title> <!--Webpage ka title-->
+</head>
+<body>
+    <h1> All Learnings of HTML in one webpage </h1><br>
+    <!--Lorem aur uske baad number likh ke paragraph likh sakte hai-->
+    <!--Br se do line ke bich space hogi aur hr se line ayegi-->
+    <h2>Lorem, ipsum dolor.</h2><hr>
+    <h3>Lorem, ipsum dolor.</h3>
+    <h4>Lorem, ipsum dolor.</h4>
+    <h5>Lorem, ipsum dolor.</h5>
+    <h6>Lorem, ipsum dolor.</h6>
+    <h7>Lorem, ipsum dolor.</h7>
+    <h8>Lorem, ipsum dolor.</h8><br><hr>
+    <!-- i aur em command italic ke liye use hoga whereas b aur strong command bold ke liye usse hoga-->
+    <p>Lorem ipsum dolor<i>Lorem ipsum dolor sit amet consectetur.</i> sit amet consectetur <b>Lorem, ipsum.</b>adipisicing elit. Suscipit hic ipsum <strong><em>Lorem ipsum dolor sit.</em></strong>laboriosam <em>Lorem ipsum dolor sit amet consectetur adipisicing.</em> nobis explicabo illo officia quae earum unde dolorum adipisci quasi consectetur ad iure odit, ipsam eveniet laudantium aperiam eaque nulla! Iure placeat porro quia ab temporibus et iusto consequatur eligendi. Non dignissimos voluptatibus autem laborum, laboriosam ut pariatur tenetur quam quod aperiam explicabo?</p>
+    <!--a command link add karta hai aur target blank ki madad se webpage next page pe khulta hai-->
+    <br><a href="https://www.google.co.in/" target = "_blank">google india</a>
+    <!--Yadi koi image show naa ho paaye to uske alternate me error display hoga-->
+    <br><img src = "nick.html" alt = "error">
+    <!--image ki height aur width adjust kari jaa sakti hai-->
+    <br><img src="https://source.unsplash.com/3tYZjGSBwbk" alt="lorem5" width="100" height="200" >
+
+    <!--ul (unordered list) specify kiya jaa saktya hai warna by default dot hoga -->
+    <ul type = "circle">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <!--ol (ordered list) ka type specify kiya jaa skta hai warna default 1,2,3... hoga -->
+    <ol type = "I">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ol>
+    <br>
+    <h1> HTML TABLE </h1><br>
+
+    <!--Table me table tags use karo: 1. head ke liye thead aur values ke liye th 2. body ke liye tbody aur values ke liye td aur dono ke values ka insertion start karne se pehle tr -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>roll</th>
+                <th>div</th>
+                <th>marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>nick</td>
+                <td>23</td>
+                <td>d</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>nick</td>
+                <td>23</td>
+                <td>d</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>nick</td>
+                <td>23</td>
+                <td>d</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>nick</td>
+                <td>23</td>
+                <td>d</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum </td>
+                <td>233465446</td>
+                <td>d</td>
+                <td>85325542</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1><strong>Form Filling</strong></h1>
+    <br>
+    <form action = "backend.php"> <!--Form backend.php pe store ho jaega-->
+        <label for="name">Name</label> <!--Click on it in html webpage and it will select Name lekin iske liye name wale input type ki id aur label for ke andar ka text same hona chaiye-->
+        <label for="date">Date</label> <!--Click on it in html webpage and it will select Date-->
+        <div>
+            Name : <input type = "text" name="myname" id="name"> <!--Name will store the corresponding values in backend (jiss ka istemal karke aap backend me inn data ko access kar paoge)-->
+        </div>
+        <br>
+        <div>
+            Role : <input type = "text" name="myrole"> 
+        </div>
+        <hr>
+        <div>
+            Email : <input type="email" name="myemail">  
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked> <!--Checked keeps checked by default-->
+        </div>
+        <br>
+        <div>
+            Gender: <input type="radio" name="myGender">  Male <input type="radio" name="myGender"> Female
+             <input type="radio" name="myGender"> Other
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            Extra : <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Car">Car</label>
+            <select name="mycar" id="Car">
+                <option value="Ferrari">Ferrari</option>
+                <option value="Lambo"selected>Lambo</option> <!--Selected keeps that option selected-->
+                <option value="Pagani">Pagani</option>
+            </select>
+        </div>
+    </form>
+    <br><h1> INLINE & BLOCK ELEMENTS </h1> <br>
+    <!--Inline : Inline elements are those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of element
+        Block :  Block-level elements take up the entire space of its parent element -->
+
+        <!--Paragraph,div,li are block type elements-->
+        <p>Paragraph1</p>
+        <p>Paragraph2</p><p style="border: 2px solid red;">Paragraph3</p>
+        <div style="border: 2px solid violet;">Paragraph4</div>
+        <!--Div ko close nahi karoge to wo niche ka pura lapet lega-->
+        <div style="border: 2px solid green;">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <ol style="border: 2px solid blueviolet;"><li>a</li><li>b</li><li>c</li><li>d</li></ol>
+        <ul style="border: 2px solid blueviolet;"><li>a</li><li>b</li><li>c</li><li>d</li></ul>
+        <!--Span,strong,a,em,img are inline elements-->
+        <span style="border: 2px solid blueviolet;">Para1 abcdefg</span> <span>Para2</span>
+        <span>Para3</span>
+        <strong style="border: 2px solid blue;">Para1 abcdefg</strong>
+        <a style="border: 2px solid yellowgreen;">abcdefg</a>
+        <img src="https://source.unsplash.com/3tYZjGSBwbk" alt="lorem5" width="100" height="200" style="border: 2px solid hotpink;">
+        <!--CSS block aur inline ko interconvert kar sakta hai-->
+
+        <H3>IDs and Classes Tutorial</H3>
+        <div id = "mainbox" class="redBg"> <!--Id is identifier/name of smthng aur ek id repeat nahi ho sakti koi dusra div span wagere nahi ho sakta, ek hi chiz jab aapko kayi aur elements pe apply karna ho to aap class use kar sakte ho -->
+            This is mainbox
+        </div>
+        <span class="redBg"></span>
+        <!-- Select and ctrl + / to comment -->
+        <!-- span ya div ke baju me dot(.) laga ke enter karo to wo class wala span ya div ho jaega 
+            Eg: span.blue ka example niche 
+        agar space chaiye eg: a b c d ko aap a.b.c.d karke likh sakte hai
+        agar me .abcd likhu to automatic div class ka kuch banega-->
+        <span class="blue"></span>
+        <!-- similarily # is for id Eg: span#blue  -->
+        <span id="blue"></span>
+        <!--Mujhe agar ek se jaada class chaiye to mai multiple dots lagauga aur agar waise hi n aur chaiye to mai *n karduga
+        eg: span.a.b.c.d*3 is given below-->
+        <span class="a b c d">first</span>
+        <span class="a b c d">second</span>
+        <span class="a b c d">third</span>
+        <h2>HTML with entities</h2>
+        <div class="cont">
+            <p>A                B         C         D </p> 
+            <!-- Only 1 space is considered -->
+            <!-- isliye &nbsp; use karo -->
+            <p>A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B</p>
+            <!--nbsp ka istemal hum generally nahi krege-->
+            <!-- To write lower than < use &lt; and for > use &gt; -->
+            <p> We can write paragraphs this way : &lt;p&gt; &lt;/p&gt; </p>
+        </div>
+</body>
+</html>
