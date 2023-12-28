@@ -1,4 +1,4 @@
-# Web-Dev-Tutorials-
+# Web-Dev-Tutorials
 All of my Web dev learnings at one place !
 <br>Learning Sequence:- 
 <li>HTML</li>
