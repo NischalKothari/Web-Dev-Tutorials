@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <!-- Height, Width, Borders and Backgrounds  -->
+    <style>
+        #firstpara{
+            background-color: aqua;
+            height: 100px;
+            width: 455px; /*Width aur height kewal ye background colour ke liye hai*/
+            border-width: 4px;
+            border-color: green;
+            border-style: solid ;
+            /*Agar yahi chiz ek line me likhni ho to ese likhe:
+            border : 4px solid green; */
+            border-radius: 3px;/*Curvature on corners*/
+        }
+        #secondpara{
+            background-color: blanchedalmond;
+            height: 50px;
+            width: 455px;
+            border-top : 4px solid purple; 
+            border-right : 5px solid red;
+            border-left : 15px solid blue;
+            border-bottom : 13px solid green;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 25px;
+        }
+        #thirdpara{
+            height: 500px;
+            width: 455px;
+            background-image: url('https://html.com/wp-content/uploads/flamingo.webp');
+            border: 4px solid violet;
+            background-repeat: no-repeat; /*Image wont repeat you can write repeat-x to repeat in x axis only and repeat-y to repeat in y axis only*/
+            background-position: center left;
+        }
+    </style>
+</head>
+<body>
+    <h3>Height, Width, Borders and Backgrounds</h3>
+    <p id="firstpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, saepe.</p>
+    <p id="secondpara">Iure nobis ipsum ab corrupti, ullam inventore! Accusantium esse, maiores iusto optio ducimus blanditiis veritatis officiis sit?
+    </p>
+    <p id = "thirdpara">Rem, ex officia temporibus, illum laborum doloremque animi blanditiis consectetur libero dignissimos odio dicta suscipit!</p>
+</body>
+</html>
