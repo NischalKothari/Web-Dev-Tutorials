@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Tutorial</title>
-    <!-- lets add css link below, write link:css and it will be auto completed by emmet -->
+    <!-- Below is external CSS, write link:css and it will be auto completed by emmet -->
     <link rel="stylesheet" href="tut1.css">
     <style>
-        /* Below is external css tag  */
+        /* Below is internal css tag  */
         p{
             color: rgb(129, 2, 255);
             background-color: seagreen !important;
@@ -16,13 +16,13 @@
 </head>
 <body>
     <!-- Note : 
-    1. Inline CSS is prioritized more than linked css and external CSS. 
-    2. Linked and external will be decided by which one was saved last time.
-    3. If you want to prioritise one from property from any of the css then write !important beside a property in css which has to preced and it will preceed in every css-->
+    1. Inline CSS is prioritized more than internal css and external CSS. 
+    2. Internal and external will be decided by which one was saved last time.
+    3. If you want to prioritise one from property from any of the css (inl int ext) then write !important beside a property in css which has to preced and it will preceed in every css-->
     <h3>This is CSS tutorial</h3>
     <!-- Below is inline css -->
     <p style = "color: red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML/CSS</p>
-    <!-- Below is the paragraogh where external css will work  -->
+    <!-- Below is the paragragh where internal and external css will work  -->
     <p>This tutorial will teach you everything you need to know about HTML/CSS</p>
 </body>
 </html>
